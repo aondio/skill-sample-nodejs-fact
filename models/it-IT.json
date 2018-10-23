@@ -1,32 +1,35 @@
 {
-  "interactionModel": {
-    "languageModel": {
-      "invocationName": "curiosità Alexa",
-      "intents": [
-        {
-          "name": "AMAZON.CancelIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.HelpIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.StopIntent",
-          "samples": []
-        },
-        {
-          "name": "AMAZON.FallbackIntent",
-          "samples": []
-        },
-        {
-          "name": "GetNewFactIntent",
-          "samples": [
-            "give me something"
-          ],
-          "slots": []
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "curiosità italiane",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetNewFactIntent",
+                    "slots": [],
+                    "samples": [
+                        "dimmi qualcosa sull'Italia"
+                    ]
+                }
+            ],
+            "types": []
         }
-      ]
     }
-  }
 }
