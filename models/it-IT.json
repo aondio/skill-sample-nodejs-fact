@@ -13,23 +13,43 @@
                 },
                 {
                     "name": "AMAZON.StopIntent",
-                    "samples": [
-                        "stop"
-                    ]
+                    "samples": []
                 },
                 {
                     "name": "AMAZON.NavigateHomeIntent",
                     "samples": []
                 },
                 {
-                    "name": "GetNewFactIntent",
-                    "slots": [],
+                    "name": "GetFactIntent",
+                    "slots": [
+                        {
+                            "name": "Italy",
+                            "type": "ItalyType"
+                        }
+                    ],
                     "samples": [
-                        "dimmi qualcosa sull'Italia"
+                        "puoi  dirmi qualcosa che non so sulla {Italy}",
+                        "dammi delle informazioni sul {Italy}",
+                        "dimmi qualcosa sull' {Italy}"
                     ]
                 }
             ],
-            "types": []
+            "types": [
+                {
+                    "name": "ItalyType",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Italia",
+                                "synonyms": [
+                                    "penisola italica",
+                                    "bel paese"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     }
 }
